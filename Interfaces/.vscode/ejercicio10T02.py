@@ -1,11 +1,3 @@
-"""
-Actividad 10. Regulador de volumen
-Archivo: ejercicio10T02.py
-
-Un QSlider horizontal (0-100, valor inicial 50) como widget central.
-El título de la ventana muestra el porcentaje seleccionado y se actualiza
-cada vez que cambia el valor; además, cada cambio se registra en consola.
-"""
 import sys
 
 from PySide6.QtCore import Qt, Slot

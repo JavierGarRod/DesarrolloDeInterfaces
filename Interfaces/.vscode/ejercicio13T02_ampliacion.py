@@ -1,13 +1,3 @@
-"""
-Actividad 13 (ampliación). Una interfaz organizada por zonas con QStackedLayout
-Archivo: ejercicio13T02_ampliacion.py
-
-Igual que ejercicio13T02.py, pero la zona derecha es un QStackedLayout con dos páginas
-que se alternan con los botones de navegación:
-  - Página 0 (botón «Proyectos»): formulario con los botones Cancelar y Guardar.
-  - Página 1 (botón «Usuarios»): una lista de usuarios de ejemplo.
-El botón «Configuración» queda sin función, como en la versión base.
-"""
 import sys
 
 from PySide6.QtCore import Slot

@@ -1,10 +1,3 @@
-"""
-Actividad 11. Simulador visual de progreso
-Archivo: ejercicio11T02.py
-
-Un QSlider (0-100) controla directamente un QProgressBar (0-100):
-valueChanged del deslizador está conectada a setValue de la barra, sin método intermedio.
-"""
 import sys
 
 from PySide6.QtCore import Qt
@@ -48,16 +41,6 @@ class VentanaProgreso(QMainWindow):
         layout.addWidget(self.progreso)
 
         self.setCentralWidget(central)
-
-        # Experimenta: si el deslizador pasa a setRange(0, 10) y la barra sigue en 0-100,
-        # al llegar a 10 la barra marca solo 10 % porque setValue(10) se interpreta dentro de
-        # su propio intervalo (10 de 100). Dos soluciones:
-        #   1) Usar el mismo intervalo en la barra: self.progreso.setRange(0, 10).
-        #      %p calcula el porcentaje sobre el intervalo de la barra, así que 10 de 10 = 100 %.
-        #   2) Conectar a un método intermedio (con @Slot(int), importando Slot de PySide6.QtCore)
-        #      que convierta el valor antes de pasarlo a la barra:
-        #          self.progreso.setValue(valor * 100 // self.deslizador.maximum())
-
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

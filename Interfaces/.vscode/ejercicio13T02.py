@@ -1,11 +1,3 @@
-"""
-Actividad 13. Una interfaz organizada por zonas
-Archivo: ejercicio13T02.py
-
-Interfaz principal de un programa de gestión de proyectos, dividida en dos zonas:
-  - Zona izquierda: navegación (QVBoxLayout con tres botones).
-  - Zona derecha: formulario (QFormLayout) y, debajo, una fila con los botones de acción.
-"""
 import sys
 
 from PySide6.QtWidgets import (
